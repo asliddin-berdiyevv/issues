@@ -1,4 +1,4 @@
-import { line, pn, print } from "./utils";
+import { line, pn, print } from "../utils";
 
 function m1(tomon: number) {
   pn(1);
