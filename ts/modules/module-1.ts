@@ -75,49 +75,110 @@ function m10(a: number, b: number) {
   );
   line();
 }
-function m11() {
-  pn(0);
-  line();
-}
-function m12() {
-  pn(0);
+
+function m11(a: number, b: number) {
+  pn(11);
+  print(
+    `Yig'indi: ${a + b}, Ko'paytma: ${a * b}, A: ${Math.abs(a)}, B: ${Math.abs(
+      b
+    )}`
+  );
   line();
 }
 
-function m13() {
-  pn(0);
+function m12(a: number, b: number) {
+  pn(12);
+  let gipotenuza = Math.sqrt(a ** 2 + b ** 2);
+  let perimetr = a + b + gipotenuza;
+  print(
+    `Gipotenuza: ${gipotenuza.toFixed(3)}, Perimetr: ${perimetr.toFixed(3)}`
+  );
   line();
 }
-function m14() {
-  pn(0);
+
+function m13(r1: number, r2: number) {
+  pn(13);
+  if (r1 > r2) {
+    let s1 = Math.PI * r1;
+    let s2 = Math.PI * r2;
+    let s3 = s1 - s2;
+    print(`S1: ${s1.toFixed(3)}, S2: ${s2.toFixed(3)}, S3: ${s3.toFixed(3)}`);
+  } else {
+    print("radius 1 katta bo'lishi kerak");
+  }
   line();
 }
-function m15() {
-  pn(0);
+
+function m14(l: number) {
+  pn(14);
+  let r = l / (2 * Math.PI);
+  let s = Math.PI * r ** 2;
+  print(`Radius: ${r.toFixed(3)}, Yuzi: ${s.toFixed(3)}`);
   line();
 }
-function m16() {
-  pn(0);
+
+function m15(s: number) {
+  pn(15);
+  let r = Math.sqrt(s * Math.PI).toFixed(3);
+  print(`Diametr: ${Number(r) * 2}, Radius: ${r}`);
   line();
 }
-function m17() {
-  pn(0);
+
+function m16(x1: number, x2: number) {
+  pn(16);
+  print(`L: ${Math.abs(x2 - x1)}`);
   line();
 }
-function m18() {
-  pn(0);
+
+function m17(a: number, b: number, c: number) {
+  pn(17);
+  let s = Math.abs(a) + Math.abs(b) + Math.abs(c);
+  let ac = Math.abs(Math.abs(a) - Math.abs(c));
+  let bc = Math.abs(Math.abs(b) - Math.abs(c));
+  print(`AC: ${ac}, BC: ${bc}, Yig'indi: ${s}`);
   line();
 }
-function m19() {
-  pn(0);
+
+function m18(a: number, b: number, c: number) {
+  pn(18);
+  let ac = Math.abs(Math.abs(a) - Math.abs(c));
+  let bc = Math.abs(Math.abs(b) - Math.abs(c));
+  print(`AC * BC = ${ac * bc}`);
   line();
 }
-function m20() {
-  pn(0);
+
+function m19(x1: number, y1: number, x2: number, y2: number) {
+  pn(19);
+  let a = Math.abs(Math.abs(x1) - Math.abs(x2));
+  let b = Math.abs(Math.abs(y1) - Math.abs(y2));
+  let perimetr = 2 * (a + b);
+  let yuza = a * b;
+  print(`Perimetr: ${perimetr}, Yuza: ${yuza}`);
   line();
 }
-function m21() {
-  pn(0);
+
+function m20(x1: number, y1: number, x2: number, y2: number) {
+  pn(20);
+  let s = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+  print(`L: ${s.toFixed(3)}`);
+  line();
+}
+
+function m21(
+  x1: number,
+  y1: number,
+  x2: number,
+  y2: number,
+  x3: number,
+  y3: number
+) {
+  pn(21);
+  let a = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+  let b = Math.sqrt((x2 - x3) ** 2 + (y2 - y3) ** 2);
+  let c = Math.sqrt((x3 - x1) ** 2 + (y3 - y1) ** 2);
+  let p = (a + b + c) / 2;
+  let yuza = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+  print(`S: ${yuza}, P: ${p}`)
   line();
 }
 
