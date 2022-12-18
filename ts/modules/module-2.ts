@@ -145,63 +145,121 @@ function i20(s: number) {
   line();
 }
 
-function i21() {
-  pn(0);
-  print(``);
+function i21(s: number) {
+  pn(21);
+  let minut = Math.floor(s / 60);
+  let secund = s % 60;
+  print(`M: ${minut}, S: ${secund}`);
   line();
 }
 
-function i22() {
-  pn(0);
-  print(``);
+function i22(s: number) {
+  pn(22);
+  let hour = Math.floor(s / 3600);
+  print(`H: ${hour}, S: ${s % 3600}`);
   line();
 }
 
-function i23() {
-  pn(0);
-  print(``);
+function i23(s: number) {
+  pn(23);
+  let hour = Math.floor(s / 3600);
+  let minut = Math.floor((s % 3600) / 60);
+  let secund = s - (hour * 3600 + minut * 60);
+  print(`H: ${hour}, M: ${minut}, S: ${secund}`);
   line();
 }
 
-function i24() {
-  pn(0);
-  print(``);
+function i24(k: number) {
+  pn(24);
+  let weekdays = [
+    "yakshanba",
+    "dushanba",
+    "seshanba",
+    "chorshanba",
+    "payshanba",
+    "juma",
+    "shanba",
+  ];
+  let day = k % 7;
+  print(`K: ${weekdays[day]}`);
   line();
 }
 
-function i25() {
-  pn(0);
-  print(``);
+function i25(k: number) {
+  pn(25);
+  let weekdays = [
+    "yakshanba",
+    "dushanba",
+    "seshanba",
+    "chorshanba",
+    "payshanba",
+    "juma",
+    "shanba",
+  ];
+  let day = (k + 3) % 7;
+  print(`K: ${weekdays[day]}`);
   line();
 }
 
-function i26() {
-  pn(0);
-  print(``);
+function i26(k: number) {
+  pn(26);
+  let weekdays = [
+    "dushanba",
+    "seshanba",
+    "chorshanba",
+    "payshanba",
+    "juma",
+    "shanba",
+    "yakshanba",
+  ];
+  let day = k % 7;
+  print(`K: ${weekdays[day]}`);
   line();
 }
 
-function i27() {
-  pn(0);
-  print(``);
+function i27(k: number) {
+  pn(27);
+  let weekdays = [
+    "dushanba",
+    "seshanba",
+    "chorshanba",
+    "payshanba",
+    "juma",
+    "shanba",
+    "yakshanba",
+  ];
+  let day = (k - 2) % 7;
+  print(`K: ${weekdays[day]}`);
   line();
 }
 
-function i28() {
-  pn(0);
-  print(``);
+function i28(k: number, n: number) {
+  pn(28);
+  let weekdays = [
+    "dushanba",
+    "seshanba",
+    "chorshanba",
+    "payshanba",
+    "juma",
+    "shanba",
+    "yakshanba",
+  ];
+  let day = (k - 2 + n) % 7;
+  print(`K: ${weekdays[day]}`);
   line();
 }
 
-function i29() {
-  pn(0);
-  print(``);
+function i29(a: number, b: number, c: number) {
+  pn(29);
+  let St = a * b;
+  let Sk = c ** 2;
+  print(`N: ${Math.floor(St / Sk)}, Qoldiq: ${St % Sk}`);
   line();
 }
 
-function i30() {
-  pn(0);
-  print(``);
+function i30(y: number) {
+  pn(30);
+  print(`Y: ${Math.ceil(y / 100)}`);
   line();
 }
 
